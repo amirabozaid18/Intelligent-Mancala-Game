@@ -178,8 +178,3 @@ choice receive_user_choice(void)
 
 	return user_choice;
 }
-
-int main(){
-    receive_user_choice();
-    return 0;
-}
