@@ -9,13 +9,15 @@ enum mode {STEALING, NO_STEALING};
 
 struct state_info
 {
-	uint8_t* state = NULL;
+	int8_t state[14];
 	bool another_turn;
 	bool game_ended;
+	int score;
 };
 
 
-state_info get_next_state(uint8_t* state,mode playing_mode,type player_type,uint8_t player_move)
+
+state_info get_next_state(int8_t* state,mode playing_mode,type player_type,uint8_t player_move)
 {
 	state_info updated_state;
 	updated_state.another_turn = false;
@@ -118,8 +120,9 @@ state_info get_next_state(uint8_t* state,mode playing_mode,type player_type,uint
 
 	}
 
+	for(uint8_t h=0; h<14; h++)
+		updated_state.state[h] = state[h];
 
-		updated_state.state = state;
 	return updated_state;
 }
 
