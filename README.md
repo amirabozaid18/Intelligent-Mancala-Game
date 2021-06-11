@@ -7,3 +7,4 @@ The game gives the human player the option to be either first or second player.
 The game allow the human player to control the game difficulty level to be either easy, medium, or hard.
 The game allow the human player to change the default CPU time limit which is 5 seconds to any value he wants in seconds.
 This time limit is the time the CPU take to play.
+Here is a link to a simple video showing our game: https://www.youtube.com/watch?v=LoHut_nVN6s&t=79s
